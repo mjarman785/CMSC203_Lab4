@@ -158,14 +158,12 @@ public class TwoDimArrayPractice extends JFrame
    public int findMinimum( int column )
    {
        int minimum = intArray[0][column];
-       int minIndex = 0;
        for (int i = 0; i < intArray.length; i++) {
            if (intArray[i][column] < minimum) {
                minimum = intArray[i][column];
-               minIndex = i;
+               animate(i, column, minimum);
            }
        }
-       animate(minIndex, column, minimum);
        return minimum;
    }
    // end of findMinimumn method
