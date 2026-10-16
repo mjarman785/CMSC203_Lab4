@@ -161,8 +161,8 @@ public class TwoDimArrayPractice extends JFrame
        for (int i = 0; i < intArray.length; i++) {
            if (intArray[i][column] < minimum) {
                minimum = intArray[i][column];
-               animate(i, column, minimum);
            }
+           animate(i, column, minimum);
        }
        return minimum;
    }
